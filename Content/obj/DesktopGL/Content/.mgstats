@@ -1,0 +1,4 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"/Users/frananderson/Projects/JumpThing/JumpThing/Content/JumpThing_background.png","/Users/frananderson/Projects/JumpThing/JumpThing/Content/bin/DesktopGL/Content/JumpThing_background.xnb","TextureProcessor","Texture2DContent",5826,1536085,0.947993
+"/Users/frananderson/Projects/JumpThing/JumpThing/Content/JumpThing_spriteSheet1.png","/Users/frananderson/Projects/JumpThing/JumpThing/Content/bin/DesktopGL/Content/JumpThing_spriteSheet1.xnb","TextureProcessor","Texture2DContent",4287,73813,0.013101
+"/Users/frananderson/Projects/JumpThing/JumpThing/Content/JumpThing_spriteSheet2.png","/Users/frananderson/Projects/JumpThing/JumpThing/Content/bin/DesktopGL/Content/JumpThing_spriteSheet2.xnb","TextureProcessor","Texture2DContent",2398,24661,0.011737
