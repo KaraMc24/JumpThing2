@@ -53,7 +53,7 @@ namespace JumpThing
             // initialise animation lists and add a single frame a default animation
             animations = new List<List<Rectangle>>();
             animations.Add(new List<Rectangle>());
-            animations[0].Add(new Rectangle(5, 5, 246, 315));
+            animations[0].Add(new Rectangle(0, 0, 48, 48));
         }
 
         //

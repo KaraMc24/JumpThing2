@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System.Collections.Generic;
 
 namespace JumpThing
 {
@@ -14,6 +15,10 @@ namespace JumpThing
         Point screenSize = new Point(800, 450);
 
         PlayerSprite PlayerSprite;
+
+      
+
+        List<List<PlatformSprite>> levels = new List<List<PlatformSprite>>();
 
         public Game1()
         {
@@ -41,10 +46,10 @@ namespace JumpThing
             whiteBox = new Texture2D(GraphicsDevice, 1, 1);
             whiteBox.SetData(new[] { Color.White });
 
-            PlayerSprite = new PlayerSprite(playerSheetTxr, whiteBox, new Vector2(50, 50));
+            PlayerSprite = new PlayerSprite(playerSheetTxr, whiteBox, new Vector2(100, 50));
 
-
-
+            BuildLevels();
+          
 
         }
 
@@ -53,9 +58,9 @@ namespace JumpThing
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            PlayerSprite.Update(gameTime);
+            PlayerSprite.Update(gameTime, levels[0]);
 
-            if (PlayerSprite.spritePos.Y > screenSize.Y + 50) PlayerSprite.ResetPlayer(new Vector2 (50, 50));
+            if (PlayerSprite.spritePos.Y > screenSize.Y + 50) PlayerSprite.ResetPlayer(new Vector2(50, 50));
 
             base.Update(gameTime);
         }
@@ -67,9 +72,24 @@ namespace JumpThing
             _spriteBatch.Draw(backgroundTxr, new Rectangle(0, 0, screenSize.X, screenSize.Y), Color.White);
 
             PlayerSprite.Draw(_spriteBatch, gameTime);
+
+            foreach (PlatformSprite platform in levels[0]) platform.Draw(_spriteBatch, gameTime);
+            
+
             _spriteBatch.End();
 
             base.Draw(gameTime);
         }
+
+        void BuildLevels()
+        {
+
+            levels.Add(new List<PlatformSprite>());
+            levels[0].Add(new PlatformSprite(platformSheetTxr, whiteBox, new Vector2(100, 300)));
+            levels[0].Add(new PlatformSprite(platformSheetTxr, whiteBox, new Vector2(250, 300)));
+
+        }
     }
 }
+
+
