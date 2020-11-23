@@ -4,11 +4,21 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>/Users/frananderson/Projects/JumpThing/JumpThing/Content/bump.wav</File>
+    <File>/Users/frananderson/Projects/JumpThing/JumpThing/Content/fanfare.wav</File>
+    <File>/Users/frananderson/Projects/JumpThing/JumpThing/Content/HeartFont.spritefont</File>
+    <File>/Users/frananderson/Projects/JumpThing/JumpThing/Content/jump.wav</File>
     <File>/Users/frananderson/Projects/JumpThing/JumpThing/Content/JumpThing_background.png</File>
     <File>/Users/frananderson/Projects/JumpThing/JumpThing/Content/JumpThing_spriteSheet1.png</File>
     <File>/Users/frananderson/Projects/JumpThing/JumpThing/Content/JumpThing_spriteSheet2.png</File>
+    <File>/Users/frananderson/Projects/JumpThing/JumpThing/Content/UIText.spritefont</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

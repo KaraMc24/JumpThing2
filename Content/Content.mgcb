@@ -13,6 +13,31 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin bump.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:bump.wav
+
+#begin fanfare.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:fanfare.wav
+
+#begin HeartFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:HeartFont.spritefont
+
+#begin jump.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:jump.wav
+
 #begin JumpThing_background.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -48,4 +73,11 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:JumpThing_spriteSheet2.png
+
+#begin UIText.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:UIText.spritefont
 

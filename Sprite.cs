@@ -109,7 +109,8 @@ namespace JumpThing
         //
         public void setAnim(int newAnim)
         {
-            if (currentAnim != newAnim) // only if the new animation is not already playing
+            if (currentAnim != newAnim && newAnim < animations.Count)
+                // only if the new animation is not already playing
             {
                 // change the animation int, and reset the counters
                 currentAnim = newAnim;

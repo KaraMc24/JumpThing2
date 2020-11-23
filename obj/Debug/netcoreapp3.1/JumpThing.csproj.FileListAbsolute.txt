@@ -23,3 +23,8 @@
 /Users/frananderson/Projects/JumpThing/JumpThing/obj/Debug/netcoreapp3.1/JumpThing.dll
 /Users/frananderson/Projects/JumpThing/JumpThing/obj/Debug/netcoreapp3.1/JumpThing.pdb
 /Users/frananderson/Projects/JumpThing/JumpThing/obj/Debug/netcoreapp3.1/JumpThing.genruntimeconfig.cache
+/Users/frananderson/Projects/JumpThing/JumpThing/bin/Debug/netcoreapp3.1/Content/UIText.xnb
+/Users/frananderson/Projects/JumpThing/JumpThing/bin/Debug/netcoreapp3.1/Content/HeartFont.xnb
+/Users/frananderson/Projects/JumpThing/JumpThing/bin/Debug/netcoreapp3.1/Content/bump.xnb
+/Users/frananderson/Projects/JumpThing/JumpThing/bin/Debug/netcoreapp3.1/Content/fanfare.xnb
+/Users/frananderson/Projects/JumpThing/JumpThing/bin/Debug/netcoreapp3.1/Content/jump.xnb
