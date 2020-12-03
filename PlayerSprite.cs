@@ -7,7 +7,8 @@ using System.Text;
 using Microsoft.Xna.Framework.Audio;
 
 namespace JumpThing
-{
+
+{   // PlayerSprite is a child of the Sprite class
     class PlayerSprite : Sprite
     {
 
@@ -17,18 +18,23 @@ namespace JumpThing
         public int lives = 3;
         SoundEffect jumpSound, bumpSound;
 
+        // Constructor
         public PlayerSprite(Texture2D newSpriteSheet, Texture2D newCollisionTxr, Vector2 newLocation, SoundEffect newJumpSound, SoundEffect newBumpSound)
             :  base(newSpriteSheet, newCollisionTxr, newLocation)
         {
+            // assign the parameters to the member variables:
             jumpSound = newJumpSound;
             bumpSound = newBumpSound;
-           
+
+
+            // assign values, they override the Sprite class
             spriteOrigin = new Vector2(0.5f, 1f);
             isColliding = true;
             //drawCollision = true;
             collisionInsetMin = new Vector2(0.25f, 0.3f);
             collisionInsetMax = new Vector2(0.25f, 0.03f);
 
+            // initialise animation lists and add frames of animation
             frameTime = 0.1f;
             animations = new List<List<Rectangle>>();
 
