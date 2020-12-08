@@ -29,9 +29,9 @@ namespace JumpThing
 
             // assign values, they override the Sprite class
             spriteOrigin = new Vector2(0.5f, 1f);
-            isColliding = true;
+            isColliding = true; // is collision active
             //drawCollision = true;
-            collisionInsetMin = new Vector2(0.25f, 0.3f);
+            collisionInsetMin = new Vector2(0.25f, 0.3f); // where the collision will be drawn
             collisionInsetMax = new Vector2(0.25f, 0.03f);
 
             // initialise animation lists and add frames of animation

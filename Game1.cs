@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace JumpThing
 
-{   // Access modifier and main class name
+{   // Access modifier and main class name (Game1)
     public class Game1 : Game
 
     {
@@ -79,7 +79,7 @@ namespace JumpThing
             if (PlayerSprite.spritePos.Y > screenSize.Y + 50)
             {
                 PlayerSprite.lives--;
-                if (PlayerSprite.lives <= 0) // if players lives are less than 0
+                if (PlayerSprite.lives <= 0) 
                 {
                     PlayerSprite.lives = 3; // total number of lives
                     levelNumber = 0;
@@ -91,11 +91,11 @@ namespace JumpThing
 
                 if (PlayerSprite.checkCollision(coinSprite)) // check if player is colliding with coin
             {
-                levelNumber++;
+                levelNumber++; // player levels up if they collide with coin
                 if (levelNumber >= levels.Count) levelNumber = 0;
                 coinSprite.spritePos = coins[levelNumber];
                 PlayerSprite.ResetPlayer(new Vector2(100, 50));
-                fanfareSound.Play(); // play fanfare sound
+                fanfareSound.Play(); // fanfare sound plays when collision with coin happens
 
             }
 
@@ -114,14 +114,14 @@ namespace JumpThing
             PlayerSprite.Draw(_spriteBatch, gameTime); // draws PlayerSprite
             coinSprite.Draw(_spriteBatch, gameTime); // draws coinSprite
 
-            foreach (PlatformSprite platform in levels[levelNumber]) platform.Draw(_spriteBatch, gameTime);
+            foreach (PlatformSprite platform in levels[levelNumber]) platform.Draw(_spriteBatch, gameTime); // how many platforms appear in each level
 
             for (int i = 0; i < PlayerSprite.lives; i++) livesString += "p";
             
-            // draws level and lives
+            // draws level and lives and colour
             _spriteBatch.DrawString(HeartFont, livesString, new Vector2(15, 5), Color.White);
 
-
+            // the size in pixes of the font
             _spriteBatch.DrawString(
                 UITextFont,
                 "level " + (levelNumber + 1),

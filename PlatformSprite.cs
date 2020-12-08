@@ -6,14 +6,14 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace JumpThing
-{
+{   // class name, PlatformSprite is a child of Sprite class
     class PlatformSprite : Sprite
     {
         public PlatformSprite(Texture2D newSpriteSheet, Texture2D newCollisionTxr, Vector2 newLocation)
             : base(newSpriteSheet, newCollisionTxr, newLocation)
         {
-            spriteOrigin = new Vector2(0.5f, 0f);
-            isColliding = true;
+            spriteOrigin = new Vector2(0.5f, 0f); // where the platform will be drawn
+            isColliding = true; // is collision active
             //drawCollision = true;
 
             animations = new List<List<Rectangle>>();
